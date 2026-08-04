@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maia Flora — Plant Curation &amp; Care</title>
+<meta name="description" content="Bespoke plant design, installation & care for extraordinary spaces. Los Angeles plant curation studio.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css?v=11">
+<link rel="icon" type="image/svg+xml" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 60"><path d="M4 56 V26 A20 20 0 0 1 44 26 V56" fill="none" stroke="%236b3324" stroke-width="3"/><line x1="24" y1="52" x2="24" y2="26" stroke="%236b3324" stroke-width="3"/><path d="M24 26 C18 20 10 20 6 24 M24 26 C30 20 38 20 42 24 M24 26 C20 16 12 14 8 15 M24 26 C28 16 36 14 40 15 M24 26 C23 16 18 10 14 8 M24 26 C25 16 30 10 34 8 M24 26 L24 12" stroke="%236b3324" stroke-width="2.4" fill="none" stroke-linecap="round"/></svg>'>
+</head>
+<body>
+
+<!-- ═══════════ SVG ASSET LIBRARY ═══════════ -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <!-- Full brand badge: arch, arched wordmark, palm, descriptor -->
+    <symbol id="mf-badge" viewBox="0 0 240 352">
+      <path d="M8 332 C22 328 26 318 26 306 L26 130 A94 94 0 0 1 214 130 L214 306 C214 318 218 328 232 332" fill="none" stroke="currentColor" stroke-width="2.4"/>
+      <path d="M28 326 C33 321 32 314 32 306 L32 130 A88 88 0 0 1 208 130 L208 306 C208 314 207 321 212 326" fill="none" stroke="currentColor" stroke-width="1.1"/>
+      <path id="mf-arc" d="M48 158 A72 72 0 0 1 192 158" fill="none"/>
+      <text font-family="Montserrat, sans-serif" font-size="17" font-weight="500" letter-spacing="6" fill="currentColor">
+        <textPath href="#mf-arc" startOffset="50%" text-anchor="middle">MAIA FLORA</textPath>
+      </text>
+      <g fill="currentColor">
+        <path d="M120 170 C104 144 84 128 60 124 C86 120 112 138 122 162 Z"/>
+        <path d="M120 170 C98 156 68 150 44 156 C70 142 104 150 120 164 Z"/>
+        <path d="M120 170 C100 172 76 184 62 202 C70 180 94 166 118 166 Z"/>
+        <path d="M120 170 C104 182 92 200 88 218 C86 196 100 176 116 168 Z"/>
+        <path d="M120 170 C136 144 156 128 180 124 C154 120 128 138 118 162 Z"/>
+        <path d="M120 170 C142 156 172 150 196 156 C170 142 136 150 120 164 Z"/>
+        <path d="M120 170 C140 172 164 184 178 202 C170 180 146 166 122 166 Z"/>
+        <path d="M120 170 C136 182 148 200 152 218 C154 196 140 176 124 168 Z"/>
+        <path d="M120 170 C114 142 112 122 118 104 C124 122 124 146 122 170 Z"/>
+        <path d="M120 170 C110 146 100 130 84 116 C102 124 116 144 122 166 Z"/>
+        <path d="M120 170 C130 146 140 130 156 116 C138 124 124 144 118 166 Z"/>
+        <circle cx="108" cy="176" r="3"/><circle cx="102" cy="181" r="2.6"/><circle cx="110" cy="183" r="2.6"/>
+        <circle cx="132" cy="176" r="3"/><circle cx="138" cy="181" r="2.6"/><circle cx="130" cy="183" r="2.6"/>
+        <path d="M112 262 C114 230 116 198 118 174 L126 174 C126 198 128 230 132 262 C125 259 119 259 112 262 Z"/>
+        <path d="M94 264 C100 252 108 254 110 264 Z"/>
+        <path d="M130 264 C132 250 142 252 148 264 Z"/>
+        <path d="M112 264 C117 257 123 257 127 264 Z"/>
+      </g>
+      <text x="120" y="298" font-family="Montserrat, sans-serif" font-size="13.5" font-weight="500" letter-spacing="4" text-anchor="middle" fill="currentColor">PLANT CURATION</text>
+      <line x1="46" y1="308" x2="194" y2="308" stroke="currentColor" stroke-width="1.4"/>
+      <text x="120" y="330" font-family="Montserrat, sans-serif" font-size="13.5" font-weight="500" letter-spacing="4" text-anchor="middle" fill="currentColor">&amp; CARE</text>
+    </symbol>
+
+  </defs>
+</svg>
+
+<!-- ═══════════ PRELOADER ═══════════ -->
+<div class="preloader" id="preloader" aria-hidden="true">
+  <div class="preloader__mark">
+    <svg class="badge badge--preloader"><use href="#mf-badge"/></svg>
+  </div>
+</div>
+
+<!-- ═══════════ NAV ═══════════ -->
+<header class="nav" id="nav">
+  <a href="#top" class="nav__brand">
+    <svg viewBox="0 0 48 60" class="arch-mark" aria-hidden="true">
+      <path class="arch-line" d="M4 56 V26 A20 20 0 0 1 44 26 V56" fill="none"/>
+      <g class="palm-lines">
+        <line x1="24" y1="52" x2="24" y2="26"/>
+        <path d="M24 26 C18 20 10 20 6 24"/>
+        <path d="M24 26 C30 20 38 20 42 24"/>
+        <path d="M24 26 C20 16 12 14 8 15"/>
+        <path d="M24 26 C28 16 36 14 40 15"/>
+        <path d="M24 26 C23 16 18 10 14 8"/>
+        <path d="M24 26 C25 16 30 10 34 8"/>
+        <line x1="24" y1="26" x2="24" y2="12"/>
+      </g>
+    </svg>
+    <span class="nav__brand-text">
+      <span class="nav__brand-name">Maia Flora</span>
+      <span class="nav__brand-tag">Plant Curation &amp; Care</span>
+    </span>
+  </a>
+  <nav class="nav__links" id="navLinks" aria-label="Primary">
+    <a href="#work">Work</a>
+    <a href="#services">Services</a>
+    <a href="#shop">Shop</a>
+    <a href="#journal">Journal</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="nav__actions">
+    <a href="#contact" class="btn btn--solid btn--sm">Start a Project</a>
+    <button class="nav__burger" id="navBurger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ═══════════ HERO ═══════════ -->
+<section class="hero">
+  <div class="hero__media" id="heroMedia">
+    <img src="img/hero-lounge.jpg"
+         alt="Warm dining lounge with curated trees and a gold lotus chandelier" onerror="this.remove()">
+    <div class="hero__scrim"></div>
+  </div>
+  <div class="hero__inner">
+    <p class="eyebrow eyebrow--light reveal">Bespoke plant design, installation &amp; care<br>for extraordinary spaces</p>
+    <h1 class="hero__title reveal">Curated greenery.<br><em>Timeless</em> spaces.</h1>
+    <div class="hero__cta reveal">
+      <a href="#work" class="btn btn--light">Explore Our Work</a>
+      <a href="#contact" class="btn btn--ghost-light">Book a Consultation</a>
+    </div>
+  </div>
+  <div class="hero__badge" aria-hidden="true">
+    <svg class="badge badge--hero"><use href="#mf-badge"/></svg>
+  </div>
+  <div class="hero__scroll" aria-hidden="true"><span></span></div>
+</section>
+
+<!-- ═══════════ MARQUEE ═══════════ -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee__track">
+    <span>Plant Curation ✦ Design &amp; Installation ✦ Living Walls ✦ Plant Care ✦ Los Angeles ✦&nbsp;</span>
+    <span>Plant Curation ✦ Design &amp; Installation ✦ Living Walls ✦ Plant Care ✦ Los Angeles ✦&nbsp;</span>
+  </div>
+</div>
+
+<!-- ═══════════ MANIFESTO ═══════════ -->
+<section class="manifesto">
+  <img class="vine vine--manifesto" src="img/vine.png" alt="" aria-hidden="true">
+  <div class="container manifesto__grid">
+    <div class="manifesto__ornament reveal" aria-hidden="true">
+      <svg viewBox="0 0 80 120" class="sprig">
+        <path d="M40 115 C40 80 40 45 40 12" />
+        <path d="M40 95 C28 90 20 78 22 66 C34 70 40 82 40 95Z"/>
+        <path d="M40 78 C52 73 60 61 58 49 C46 53 40 65 40 78Z"/>
+        <path d="M40 58 C28 53 22 42 24 31 C35 35 40 46 40 58Z"/>
+        <path d="M40 40 C50 36 56 26 54 16 C45 19 40 29 40 40Z"/>
+      </svg>
+    </div>
+    <div class="manifesto__body">
+      <p class="eyebrow reveal">The Studio</p>
+      <h2 class="manifesto__text reveal">We treat plants as <em>living art</em> — curated, installed, and cared for with the same intent a gallery gives its collection.</h2>
+      <p class="manifesto__sub reveal">Maia Flora is a boutique plant curation studio in Los Angeles. From rooftop retreats to living walls, we design botanical environments that are elevated, enduring, and deeply connected to place.</p>
+      <div class="manifesto__stats reveal">
+        <div><strong>120+</strong><span>Spaces transformed</span></div>
+        <div><strong>9 yrs</strong><span>Curating greenery</span></div>
+        <div><strong>98%</strong><span>Clients on ongoing care</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ SERVICES ═══════════ -->
+<section class="services" id="services">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">Our Services</p>
+      <h2 class="section-title">How we bring spaces <em>to life</em></h2>
+    </div>
+    <div class="services__grid">
+      <article class="service reveal">
+        <div class="service__icon" aria-hidden="true">
+          <svg viewBox="0 0 64 64"><path d="M32 54 V22 M32 22 C24 14 14 14 8 20 M32 22 C40 14 50 14 56 20 M32 22 C28 10 18 8 12 9 M32 22 C36 10 46 8 52 9 M32 22 L32 6"/></svg>
+        </div>
+        <h3>Plant Curation</h3>
+        <p>Thoughtful plant selection for beauty and longevity — species chosen for your light, your architecture, your life.</p>
+        <a class="service__link" href="inquire-plant-curation.html">Inquire<span aria-hidden="true"> →</span></a>
+      </article>
+      <article class="service reveal">
+        <div class="service__icon" aria-hidden="true">
+          <svg viewBox="0 0 64 64"><path d="M10 54 H54 M14 54 V30 L32 14 L50 30 V54 M26 54 V40 H38 V54"/></svg>
+        </div>
+        <h3>Design &amp; Installation</h3>
+        <p>Custom environments that transform and inspire — from concept and sourcing through white-glove install.</p>
+        <a class="service__link" href="inquire-design-installation.html">Inquire<span aria-hidden="true"> →</span></a>
+      </article>
+      <article class="service reveal">
+        <div class="service__icon" aria-hidden="true">
+          <svg viewBox="0 0 64 64"><path d="M12 8 H52 V56 H12 Z M12 24 H52 M12 40 H52 M25 8 V56 M39 8 V56"/></svg>
+        </div>
+        <h3>Living Walls</h3>
+        <p>Biophilic vertical gardens that bring architecture to life — engineered, irrigated, and endlessly green.</p>
+        <a class="service__link" href="inquire-living-walls.html">Inquire<span aria-hidden="true"> →</span></a>
+      </article>
+      <article class="service reveal">
+        <div class="service__icon" aria-hidden="true">
+          <svg viewBox="0 0 64 64"><path d="M20 28 C8 28 6 40 8 46 C20 48 28 42 28 32 M28 32 C28 20 38 10 54 10 C56 28 46 40 32 38 M24 54 C28 44 34 38 44 30"/></svg>
+        </div>
+        <h3>Plant Care</h3>
+        <p>Ongoing, scheduled care to keep your space thriving — watering, pruning, feeding, and seasonal refreshes.</p>
+        <a class="service__link" href="inquire-plant-care.html">Inquire<span aria-hidden="true"> →</span></a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ FEATURED PROJECTS ═══════════ -->
+<section class="work" id="work">
+  <div class="container">
+    <div class="section-head section-head--row reveal">
+      <div>
+        <p class="eyebrow">Featured Projects</p>
+        <h2 class="section-title">Spaces we've <em>transformed</em></h2>
+      </div>
+      <a href="#contact" class="text-link">Explore all projects <span aria-hidden="true">→</span></a>
+    </div>
+    <div class="work__grid">
+      <a href="project-bird-street.html" class="project project--tall reveal">
+        <div class="project__media">
+          <img src="img/bird-street.jpg" alt="Rooftop terrace with yellow roses overlooking the city" loading="lazy" onerror="this.remove()">
+        </div>
+        <div class="project__meta">
+          <span class="project__tag">Hospitality</span>
+          <h3>Bird Street</h3>
+          <p>West Hollywood, CA</p>
+        </div>
+      </a>
+      <a href="project-verdant-courtyard.html" class="project reveal">
+        <div class="project__media">
+          <img src="img/verdant-courtyard.jpg" alt="Courtyard water garden with lilies beside a banquette" loading="lazy" onerror="this.remove()">
+        </div>
+        <div class="project__meta">
+          <span class="project__tag">Commercial</span>
+          <h3>Verdant Courtyard</h3>
+          <p>Silver Lake, CA</p>
+        </div>
+      </a>
+      <a href="project-green-wall-sanctuary.html" class="project reveal">
+        <div class="project__media">
+          <img src="img/green-wall.jpg" alt="Succulent living wall set into a dark brick facade" loading="lazy" onerror="this.remove()">
+        </div>
+        <div class="project__meta">
+          <span class="project__tag">Residential</span>
+          <h3>Green Wall Sanctuary</h3>
+          <p>Brentwood, Los Angeles, CA</p>
+        </div>
+      </a>
+      <a href="project-caravan-restaurant.html" class="project project--wide reveal">
+        <div class="project__media">
+          <img src="img/caravan-restaurant.jpg" alt="Giant birds of paradise rising from striped banquettes on the covered terrace" loading="lazy" onerror="this.remove()">
+        </div>
+        <div class="project__meta">
+          <span class="project__tag">Hospitality</span>
+          <h3>Caravan Restaurant</h3>
+          <p>Near LAX, Los Angeles, CA</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ TESTIMONIAL ═══════════ -->
+<section class="quote">
+  <div class="container quote__inner reveal">
+    <svg viewBox="0 0 80 120" class="sprig sprig--quote" aria-hidden="true">
+      <path d="M40 115 C40 80 40 45 40 12" />
+      <path d="M40 95 C28 90 20 78 22 66 C34 70 40 82 40 95Z"/>
+      <path d="M40 78 C52 73 60 61 58 49 C46 53 40 65 40 78Z"/>
+      <path d="M40 58 C28 53 22 42 24 31 C35 35 40 46 40 58Z"/>
+      <path d="M40 40 C50 36 56 26 54 16 C45 19 40 29 40 40Z"/>
+    </svg>
+    <blockquote>
+      <p>“Maia Flora transformed our space into something <em>alive and extraordinary</em>.”</p>
+      <cite><strong>Jessica R.</strong> — Homeowner, CA</cite>
+    </blockquote>
+  </div>
+</section>
+
+<!-- ═══════════ SHOP ═══════════ -->
+<section class="shop" id="shop">
+  <div class="container">
+    <div class="shop__head reveal">
+      <div>
+        <p class="eyebrow eyebrow--rose">Shop the Collection</p>
+        <h2 class="section-title section-title--light">Curated plants, statement planters<br>&amp; botanical essentials</h2>
+      </div>
+      <a href="#contact" class="text-link text-link--light">Shop now <span aria-hidden="true">→</span></a>
+    </div>
+    <div class="shop__grid">
+      <a href="#contact" class="product reveal">
+        <div class="product__media">
+          <img src="https://images.unsplash.com/photo-1526397751294-331021109fbd?auto=format&fit=crop&w=800&q=80" alt="Sculptural potted specimen tree" loading="lazy" onerror="this.remove()">
+        </div>
+        <h3>Olive Tree</h3><span class="product__price">$285</span>
+      </a>
+      <a href="#contact" class="product reveal">
+        <div class="product__media">
+          <img src="https://images.unsplash.com/photo-1614594975525-e45190c55d0b?auto=format&fit=crop&w=800&q=80" alt="Monstera deliciosa" loading="lazy" onerror="this.remove()">
+        </div>
+        <h3>Monstera Deliciosa</h3><span class="product__price">$125</span>
+      </a>
+      <a href="#contact" class="product reveal">
+        <div class="product__media">
+          <img src="https://images.unsplash.com/photo-1611211232932-da3113c5b960?auto=format&fit=crop&w=800&q=80" alt="Handcrafted ceramic planter" loading="lazy" onerror="this.remove()">
+        </div>
+        <h3>Handcrafted Planter</h3><span class="product__price">$88</span>
+      </a>
+      <a href="#contact" class="product reveal">
+        <div class="product__media">
+          <img src="https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&w=800&q=80" alt="Amber apothecary bottle in palm-leaf shadow" loading="lazy" onerror="this.remove()">
+        </div>
+        <h3>Plant Care Set</h3><span class="product__price">$48</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ JOURNAL ═══════════ -->
+<section class="journal" id="journal">
+  <div class="container">
+    <div class="section-head section-head--row reveal">
+      <div>
+        <p class="eyebrow">Journal</p>
+        <h2 class="section-title">Notes from the <em>studio</em></h2>
+      </div>
+      <a href="#contact" class="text-link">All entries <span aria-hidden="true">→</span></a>
+    </div>
+    <div class="journal__grid">
+      <a href="journal-los-angeles-light.html" class="entry reveal">
+        <span class="entry__date">June 2026</span>
+        <h3>Choosing the plants that survive Los Angeles light</h3>
+        <p>Why the south-facing window is both a gift and a trap — and the species that thrive in it.</p>
+        <span class="entry__more">Read<span aria-hidden="true"> →</span></span>
+      </a>
+      <a href="journal-living-wall.html" class="entry reveal">
+        <span class="entry__date">May 2026</span>
+        <h3>The case for the living wall</h3>
+        <p>What vertical gardens do to a room's acoustics, air, and mood — beyond the obvious beauty.</p>
+        <span class="entry__more">Read<span aria-hidden="true"> →</span></span>
+      </a>
+      <a href="journal-curation-over-collection.html" class="entry reveal">
+        <span class="entry__date">April 2026</span>
+        <h3>Curation over collection</h3>
+        <p>Fewer, better plants: the editing philosophy behind every Maia Flora installation.</p>
+        <span class="entry__more">Read<span aria-hidden="true"> →</span></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ CTA ═══════════ -->
+<section class="cta" id="contact">
+  <img class="vine vine--cta" src="img/vine.png" alt="" aria-hidden="true">
+  <div class="cta__inner container reveal">
+    <svg class="badge badge--cta" aria-hidden="true"><use href="#mf-badge"/></svg>
+    <h2 class="cta__title">Let's bring your space <em>to life</em>.</h2>
+    <p class="eyebrow">Schedule a complimentary consultation</p>
+    <form class="cta__form" data-mf-form data-subject="Consultation request — maiaflorala.com">
+      <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px">
+      <input type="email" name="email" required placeholder="Your email address" aria-label="Email address">
+      <button type="submit" class="btn btn--solid">Book a Consultation</button>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<!-- ═══════════ FOOTER ═══════════ -->
+<footer class="footer">
+  <div class="container footer__grid">
+    <div class="footer__brand">
+      <svg class="badge badge--footer" aria-hidden="true"><use href="#mf-badge"/></svg>
+      <p class="footer__name">Maia Flora</p>
+      <p class="footer__tag">Plant Curation &amp; Care — Los Angeles</p>
+    </div>
+    <nav class="footer__col" aria-label="Explore">
+      <h4>Explore</h4>
+      <a href="#work">Work</a>
+      <a href="#services">Services</a>
+      <a href="#shop">Shop</a>
+      <a href="#journal">Journal</a>
+    </nav>
+    <nav class="footer__col" aria-label="Social media">
+      <h4>Social Media</h4>
+      <a href="https://www.instagram.com/maiaflorala/" target="_blank" rel="noopener">Instagram</a>
+    </nav>
+    <div class="footer__col">
+      <h4>Visit</h4>
+      <p>By appointment only<br>Los Angeles, California</p>
+    </div>
+  </div>
+  <div class="container footer__base">
+    <span>© 2026 Maia Flora. All rights reserved.</span>
+    <span>Curated greenery. Timeless spaces.</span>
+  </div>
+</footer>
+
+<script src="js/main.js?v=9"></script>
+</body>
+</html>
