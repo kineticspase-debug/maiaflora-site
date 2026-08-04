@@ -44,9 +44,9 @@
     }
   });
 
-  // Forms → studio inbox (billing@maiaflora.com) via FormSubmit,
+  // Forms → studio inbox (billing@maiaflorala.com) via FormSubmit,
   // with a mailto: fallback if the network path fails.
-  const INBOX = 'billing@maiaflora.com';
+  const INBOX = 'billing@maiaflorala.com';
   document.querySelectorAll('form[data-mf-form]').forEach(form => {
     form.addEventListener('submit', async e => {
       e.preventDefault();
